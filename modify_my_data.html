@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Safka</title>
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- start header  -->
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
+
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+              <div class="sing-up-blocks nav_sign_block__">
+                <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                <a class="singup_link" href="register_signin.html">
+                  <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                    <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                  </figure>
+                  حساب جديد
+                </a>
+              </div>
+              <ul class="nav-list-om list-unstyled">
+                <li class="active">
+                  <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="mega_menu__">
+                  <a class="" href="department.html"> نبذة عنا </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">القطاعات </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">الأقسام</a>
+                </li>
+                <li>
+                  <a href="my_ads.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+            <a class="header_logo__" href="index.html">
+              <figure class="figure__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+            <ul class="toolbar_options__ list-unstyled">
+              <li class="block__">
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__">
+                      <img src="./assets/images/saudi.png" alt="" />
+                    </figure>
+                    العربية
+                  </a>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block__ larg_size_only__">
+                <div class="sing-up-blocks">
+                  <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                  <a class="singup_link" href="register_signin.html">
+                    <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+              </li>
+
+              <!-- <li class="block__ dropdown__">
+              <a class="info_link_block__" href="#!">
+                مرحبا , خالد
+              </a>
+              <ul class="sub-menu__">
+                <li>
+                  <a class="modify" href="modify_my_data.html">
+                    تعديل بياناتى
+                  </a>
+                </li>
+                <li>
+                  <a class="orders" href="change_password.html">
+                    طلبات الأحلام
+                  </a>
+                </li>
+                <li>
+                  <a class="wallet" href="change_password.html">
+                    محفظتي
+                  </a>
+                </li>
+                <li>
+                  <a class="signout_link__" href="#!">
+                    تسجيل الخروج
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="block__">
+              <a class="notifications_block__" href="#!">
+                <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                <span class="badge">12</span>
+              </a>
+            </li> -->
+              <!-- start active nenu button in small sizes  -->
+              <li class="block__ small_size_only__">
+                <button class="menu_button__ button__" id="menu-butt-activ-om">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+              <!-- end active nenu button in small sizes  -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <!-- end header  -->
+  <main class="registeration_page__ site_identity_shape_parent__">
+    <figure class="site_identity_shape__ center_horizertal__ figure__ opacity_effect__">
+      <img class="img-om" src="./assets//images/shape_.png" alt=".." />
+    </figure>
+    <figure class="site_identity_shape__ reverse_vertical__ center_horizertal__ figure__ opacity_effect__">
+      <img class="img-om" src="./assets//images/shape_.png" alt=".." />
+    </figure>
+    <div class="container">
+
+      <div class="login_form__ default_form__">
+        <div class="register_form_title__">
+          <h1 class="head__">تعديل بياناتى</h1>
+          <p class="parg__">قم بتعديل بياناتك بكل سهولة</p>
+        </div>
+        <form action="register_verification_code.html">
+          <div class="input_group__">
+            <input class="input__" type="text" name="" placeholder="الاسم" />
+          </div>
+          <div class="input_group__">
+            <input class="input__" type="text" name="" placeholder="رقم الجوال" />
+          </div>
+          <input class="submit-button__ input__" type="submit" value="حفظ التعديلات" />
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="footer_content__">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <figure class="footer-logo__ figure__ loading-omd">
+              <img class="lazy-omd img-om" data-src="assets/images/logo.png" alt=".." width="" height="" />
+            </figure>
+            <p class="footer_parg__">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+              الخارجي للنص أو شكل توضع
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h2 class="footer_head__">روابط سريعة</h2>
+            <ul class="footer_list__ list-unstyled">
+              <li><a href="#!">نبذة عنا</a></li>
+              <li>
+                <a href="#!">المقالات</a>
+              </li>
+              <li><a href="#!">مميزاتنا</a></li>
+              <li>
+                <a href="#!">شروط الإستخدام</a>
+              </li>
+              <li><a href="#!">المفسرين</a></li>
+              <li><a href="#!">سياسة الخصوصية</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h2 class="footer_head__">تابعنا من خلال</h2>
+            <ul class="footer_socials__ list-unstyled">
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/twitter.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/snapchat.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/facebook.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/twitter.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/snapchat.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+              <li class="li__">
+                <a class="link__" href="#!">
+                  <img class="img-om" src="./assets/images/socials/facebook.svg" alt=".." width="" height="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights-content___">
+        <div class="row justify-content-end">
+          <div class="col-lg-12 col-md-12">
+            <p class="copyrights__">
+              جميع الحقوق محفوظة - تصميم وبرمجة 2022
+              &copy;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

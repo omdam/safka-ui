@@ -1,0 +1,127 @@
+.form_label_for_info__ {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .head__,
+  .link__ {
+    font-size: 15px;
+    color: $headingSecondaryColor;
+    margin-bottom: 0;
+  }
+
+  .link__ {
+    color: $secondaryColor;
+    transition: 0.5s;
+    margin-inline-start: 10px;
+  }
+
+  &.border_wrapper__ {
+    border: 1px solid $secondaryColor;
+    border-radius: $mainBorderRidus;
+    padding: 13px 10px;
+  }
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registeration_page__ {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include sm {
+    padding: 60px 0;
+  }
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  direction: ltr;
+  position: relative;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  gap: 10px;
+
+  .code-input {
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $mainBorderRidus;
+    border: 1px solid #dcdcdc;
+    font-size: 27px;
+    color: $secondaryColor;
+    font-family: sans-serif;
+    outline: none;
+    transition: 0.5s;
+
+    &.active {
+      background-color: rgba($secondaryColor, 0.2);
+      border-color: $secondaryColor;
+      color: $secondaryColor;
+    }
+
+    &:focus {
+      border-color: $secondaryColor;
+    }
+  }
+}
+
+.send_code_again__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 14px;
+  color: $paragraphMainColor;
+
+  &:hover {
+    color: $secondaryColor;
+  }
+
+  .shape__ {
+    .circular-chart {
+      display: block;
+      margin: 0;
+      margin-inline-end: 10px;
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 3.8;
+    }
+
+    .circle {
+      fill: none;
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+      stroke: $secondaryColor;
+    }
+
+    // @keyframes progress {
+    //   0% {
+    //     stroke-dasharray: 0 100;
+    //   }
+    // }
+
+    .percentage {
+      fill: $secondaryColor;
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+  }
+}

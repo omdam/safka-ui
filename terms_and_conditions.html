@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Safka</title>
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- start header  -->
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
+
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+              <div class="sing-up-blocks nav_sign_block__">
+                <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                <a class="singup_link" href="register_signin.html">
+                  <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                    <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                  </figure>
+                  حساب جديد
+                </a>
+              </div>
+              <ul class="nav-list-om list-unstyled">
+                <li class="active">
+                  <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="mega_menu__">
+                  <a class="" href="department.html"> نبذة عنا </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">القطاعات </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">الأقسام</a>
+                </li>
+                <li>
+                  <a href="my_ads.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+            <a class="header_logo__" href="index.html">
+              <figure class="figure__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+            <ul class="toolbar_options__ list-unstyled">
+              <li class="block__">
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__">
+                      <img src="./assets/images/saudi.png" alt="" />
+                    </figure>
+                    العربية
+                  </a>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block__ larg_size_only__">
+                <div class="sing-up-blocks">
+                  <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                  <a class="singup_link" href="register_signin.html">
+                    <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+              </li>
+
+              <!-- <li class="block__ dropdown__">
+                <a class="info_link_block__" href="#!">
+                  مرحبا , خالد
+                </a>
+                <ul class="sub-menu__">
+                  <li>
+                    <a class="modify" href="modify_my_data.html">
+                      تعديل بياناتى
+                    </a>
+                  </li>
+                  <li>
+                    <a class="orders" href="change_password.html">
+                      طلبات الأحلام
+                    </a>
+                  </li>
+                  <li>
+                    <a class="wallet" href="change_password.html">
+                      محفظتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="signout_link__" href="#!">
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__">
+                <a class="notifications_block__" href="#!">
+                  <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                  <span class="badge">12</span>
+                </a>
+              </li> -->
+              <!-- start active nenu button in small sizes  -->
+              <li class="block__ small_size_only__">
+                <button class="menu_button__ button__" id="menu-butt-activ-om">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+              <!-- end active nenu button in small sizes  -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <!-- end header  -->
+  <!-- Start Breadcrumb -->
+  <section class="breadcrumb_section">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="item__">
+          <a class="bread_link home_link__" href="index.html">الرئيسية</a>
+        </li>
+        <li class="item__">
+          <span class="bread_current">القطاعات</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Breadcrumb -->
+
+  <!-- Start Sectors -->
+  <main class="terms_and_conditions_page__">
+    <div class="container">
+      <div class="terms_and_conditions_block">
+        <h3 class="section_head">الشروط والأحكام</h3>
+        <h3 class="parag_head">مقدمة</h3>
+        <p class="parag__">
+          أعدت هذه الشروط والأحكام "الشروط" لتكون المرجع النظامي الملزم فيما
+          يتعلق بالخدمات المقدمة من شركة صفقة استثمارية لك. إن شركة نمو مؤسسة
+          وفق أنظمة المملكة العربية السعودية، وهي شركة مرخصة من البنك المركزي
+          السعودي لتقديم خدمات (التمويل الاستهلاكي المصغر)، وتنظم هذه الشروط
+          استخدامك لموقع الشركة أو تطبيقاتها على الأجهزة الذكية
+        </p>
+        <p class="parag__">
+          إن اطلاعك على الشروط وقبولها من قبلك يعد شرطاً أساسياً لإكمال تسجيلك
+          لدينا وعرض خدماتنا عليك. ذلك أن الشركة تلتزم قبل تقديم أي خدمات لك ،
+          أن تعمل فحوصات "اعرف عميلك" أو المعروفة بـ (KYC) للتأكد منك ومن صفتك
+          وماذا كان تقديم خدماتنا لك مسموح نظاماً. لذلك يرجى قراءة هذه الشروط
+          بعناية، وإذا كنت لا توافق على الشروط فلا تقم باستخدام خدمات شركة نمو
+          .ان شروط الاستخدام هذه والوثائق القانونية خاضعة للتعديل من قبلنا في
+          اي وقت. إن استمرار استخدامك للموقع بعد نشر أي تغيير يعني موافقتك على
+          شروط الاستخدام هذه والوثائق القانونية التي تم تعديلها
+        </p>
+        <h3 class="parag_head">شروط الاستخدام</h3>
+        <p class="parag__">
+          يتم توفير شروط الاستخدام عبر موقع شركة نمو "الشركة"، بما في ذلك أي
+          مجال فرعي من الموقع الإلكتروني أو تطبيقات الهواتف الذكية، فيجب عليك
+          التأكد من قراءة وفهم شروط الاستخدام بعناية فائقة والموافقة عليها
+          والالتزام بها، وبغض النظر عن كونك زائراً أو عضواً مسجلاً في الموقع.
+          إذا كنت لا ترغب في الالتزام بشروط الاستخدام فلا يجب عليك الوصول إلى
+          الموقع أو استخدامه. بالإضافة إلى شروط الاستخدام؛ يمكنك الدخول في
+          اتفاقيات أخرى معنا، والتي ستحكم استخدامك للمنتجات والخدمات المقدمة
+          على الموقع. إذا كان هناك أي تعارض بين شروط الاستخدام أو أي اتفاقيات
+          أخرى تنطبق على منتج أو خدمة معروضة على الموقع؛ فتكون الاتفاقيات هي
+          المقدمة في التطبيق
+        </p>
+        <a href="#!" class="site_link download_btn__">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.442" height="30.849" viewBox="0 0 26.442 30.849">
+            <path id="Icon_metro-file-pdf" data-name="Icon metro-file-pdf"
+              d="M27.842,8.745a4.006,4.006,0,0,1,.826,1.308,3.973,3.973,0,0,1,.344,1.515V31.4a1.646,1.646,0,0,1-1.653,1.653H4.223A1.646,1.646,0,0,1,2.571,31.4V3.856A1.646,1.646,0,0,1,4.223,2.2H19.648a3.974,3.974,0,0,1,1.515.344,4.006,4.006,0,0,1,1.308.826ZM20.2,4.545v6.473h6.473a1.881,1.881,0,0,0-.379-.706L20.9,4.923a1.88,1.88,0,0,0-.706-.379Zm6.61,26.3V13.221H19.648a1.646,1.646,0,0,1-1.653-1.653V4.407H4.774V30.849H26.809ZM17.961,20.64a13.1,13.1,0,0,0,1.446.964,17.082,17.082,0,0,1,2.014-.121q2.531,0,3.047.844a.832.832,0,0,1,.034.9.05.05,0,0,1-.017.034l-.034.034v.017q-.1.654-1.222.654a7.1,7.1,0,0,1-1.98-.344,12.552,12.552,0,0,1-2.238-.912,31,31,0,0,0-6.748,1.429q-2.634,4.51-4.166,4.51a1,1,0,0,1-.482-.121L7.2,28.318q-.017-.017-.1-.086a.711.711,0,0,1-.1-.62,3.738,3.738,0,0,1,.964-1.575,8.319,8.319,0,0,1,2.272-1.661.251.251,0,0,1,.4.1.1.1,0,0,1,.034.069q.9-1.463,1.842-3.391a26.274,26.274,0,0,0,1.79-4.51,13.916,13.916,0,0,1-.525-2.746,6.693,6.693,0,0,1,.112-2.195q.189-.689.723-.689h.379a.726.726,0,0,1,.6.258,1.375,1.375,0,0,1,.155,1.171.373.373,0,0,1-.069.138.448.448,0,0,1,.017.138v.516a22.542,22.542,0,0,1-.241,3.305,8.709,8.709,0,0,0,2.513,4.1ZM8.045,27.715A7.6,7.6,0,0,0,10.4,25,9.813,9.813,0,0,0,8.9,26.442,5.722,5.722,0,0,0,8.045,27.715ZM14.9,11.878a5.119,5.119,0,0,0-.034,2.272q.017-.121.121-.757,0-.052.121-.74a.387.387,0,0,1,.069-.138.05.05,0,0,1-.017-.034.035.035,0,0,0-.009-.026.035.035,0,0,1-.009-.026.991.991,0,0,0-.224-.62.05.05,0,0,1-.017.034v.034ZM12.762,23.257a25.25,25.25,0,0,1,4.889-1.394,2.6,2.6,0,0,1-.224-.164,3.083,3.083,0,0,1-.275-.232,9.119,9.119,0,0,1-2.186-3.03,23,23,0,0,1-1.429,3.391q-.516.964-.775,1.429Zm11.121-.275a4.12,4.12,0,0,0-2.41-.413,6.511,6.511,0,0,0,2.135.482,1.67,1.67,0,0,0,.31-.017q0-.017-.034-.052Z"
+              transform="translate(-2.571 -2.203)" fill="#fff" />
+          </svg>
+          الشروط والأحكام
+        </a>
+      </div>
+    </div>
+  </main>
+  <!-- End Sectors -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="footer_content__">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <figure class="footer-logo__ figure-om loading-omd">
+              <img class="lazy-omd img-om" data-src="assets/images/footer-logo.png" alt=".." width="" height="" />
+            </figure>
+            <p class="footer_parg__">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+            </p>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">روابط سريعة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">القطاعات</a></li>
+                  <li>
+                    <a href="#!">الأقسام</a>
+                  </li>
+                  <li><a href="#!">نبذة عن منصة </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">المساعدة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">الشروط والأحكام</a></li>
+                  <li>
+                    <a href="#!">الأسئلة الشائعة</a>
+                  </li>
+                  <li><a href="#!">اتصل بنا</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+                <ul class="footer_list__ contact_info list-unstyled">
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/whatsapp.svg" alt=".." width="" height="" />
+                      </figure>
+                      +966 123-456-7890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/email.svg" alt=".." width="" height="" />
+                      </figure>
+                      name123@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/location.svg" alt=".." width="" height="" />
+                      </figure>
+                      طريق الملك فهد
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights_content___">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__">
+              جميع الحقوق محفوظة - تصميم وبرمجة 2022 &copy;
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <ul class="footer_socials__ list-unstyled">
+              <li class="li__">
+                <a href="#!" class="link__">
+                  <img class="img-om" src="./assets/images/socials/twitter.png" alt=".." width="" height="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__ end__">
+              تصميم وتطوير
+              <a href="#!">
+                <img src="./assets/images/copyrights.png" alt=".." />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+.single_chat_page {
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.chat_block {
+  background-color: #fff;
+  padding-top: 20px;
+  border-radius: $secondaryBorderRidus;
+  margin-bottom: 30px;
+
+  .chat_block_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid $borderColor;
+
+    .head__ {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .chat_content {
+    padding: 20px;
+
+    .message__ {
+      max-width: 347px;
+    }
+  }
+}
+
+.message_input_block {
+  padding: 20px;
+  border-top: 1px solid $borderColor;
+
+  .messsage_input_form {
+    position: relative;
+  }
+
+  .form_buttons_wrapper__ {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 10px;
+    transform: translateY(-50%);
+  }
+
+  .label_for_file_input {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-inline-end: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .send_button {
+    border: 0;
+    background-color: $primaryColor;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgba($color: $primaryColor, $alpha: 0.85);
+    }
+  }
+}
+
+.deal_info_block {
+  background-color: #fff;
+  border-radius: $secondaryBorderRidus;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(#000, 0.06);
+
+  .deal_info_head {
+    padding: 0 20px 15px;
+    border-bottom: 1px solid $borderColor;
+
+    .site_head__ {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+  .info_block_content {
+    padding: 20px;
+    padding-bottom: 0;
+    border-bottom: 1px solid $borderColor;
+
+    .strip {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .title {
+        font-size: 15px;
+        color: #000;
+        display: block;
+        min-width: 30%;
+        margin: 0;
+        margin-inline-end: 20px;
+      }
+
+      .title_data {
+        font-size: 15px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        .icon__,
+        svg {
+          margin-inline-end: 10px;
+        }
+
+        &.link__ {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          height: 40px;
+          min-width: 76px;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+
+  .deal_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $mainBorderRidus;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 144px;
+    background-color: $secondaryColor;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgba($color: $secondaryColor, $alpha: 0.85);
+    }
+  }
+}
+
+.contact_info_block {
+  background-color: #fff;
+  border-radius: $secondaryBorderRidus;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(#000, 0.06);
+
+  .contact_info_head {
+    padding: 0 20px 15px;
+    border-bottom: 1px solid $borderColor;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .info_block_content {
+    padding: 20px;
+    padding-bottom: 0;
+
+    .strip {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .title {
+        font-size: 15px;
+        color: $headingMainColor;
+        display: block;
+        min-width: 30%;
+        margin: 0;
+        margin-inline-end: 20px;
+      }
+
+      .title_data {
+        font-size: 15px;
+        margin: 0;
+
+        svg {
+          margin-inline-end: 10px;
+        }
+
+        .tel_link {
+          color: $paragraphMainColor;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &.link__ {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          height: 40px;
+          min-width: 76px;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}

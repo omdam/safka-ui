@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Safka</title>
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- start header  -->
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
+
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+              <div class="sing-up-blocks nav_sign_block__">
+                <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                <a class="singup_link" href="register_signin.html">
+                  <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                    <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                  </figure>
+                  حساب جديد
+                </a>
+              </div>
+              <ul class="nav-list-om list-unstyled">
+                <li class="active">
+                  <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="mega_menu__">
+                  <a class="" href="department.html"> نبذة عنا </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">القطاعات </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">الأقسام</a>
+                </li>
+                <li>
+                  <a href="my_ads.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+            <a class="header_logo__" href="index.html">
+              <figure class="figure__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+            <ul class="toolbar_options__ list-unstyled">
+              <li class="block__">
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__">
+                      <img src="./assets/images/saudi.png" alt="" />
+                    </figure>
+                    العربية
+                  </a>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block__ larg_size_only__">
+                <div class="sing-up-blocks">
+                  <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                  <a class="singup_link" href="register_signin.html">
+                    <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+              </li>
+
+              <!-- <li class="block__ dropdown__">
+                <a class="info_link_block__" href="#!">
+                  مرحبا , خالد
+                </a>
+                <ul class="sub-menu__">
+                  <li>
+                    <a class="modify" href="modify_my_data.html">
+                      تعديل بياناتى
+                    </a>
+                  </li>
+                  <li>
+                    <a class="orders" href="change_password.html">
+                      طلبات الأحلام
+                    </a>
+                  </li>
+                  <li>
+                    <a class="wallet" href="change_password.html">
+                      محفظتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="signout_link__" href="#!">
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__">
+                <a class="notifications_block__" href="#!">
+                  <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                  <span class="badge">12</span>
+                </a>
+              </li> -->
+              <!-- start active nenu button in small sizes  -->
+              <li class="block__ small_size_only__">
+                <button class="menu_button__ button__" id="menu-butt-activ-om">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+              <!-- end active nenu button in small sizes  -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <!-- end header  -->
+
+
+  <main class="profile_section default_page__">
+    <div class="container">
+      <div class="profile_info">
+        <figure class="profile_img figure__ loading-omd">
+          <img class="lazy-omd img-om" data-src="assets/images/profile/Ellipse-7031.jpg" alt="deals section block" />
+        </figure>
+
+        <h2 class="name">طارق محمد عبدالله</h2>
+
+        <div class="contacts_buttons_block__">
+          <div class="tel_num">
+            <span class="name">رقم الجوال</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.525" height="14.445" viewBox="0 0 15.525 14.445">
+              <path id="Path_31136" data-name="Path 31136"
+                d="M21.806,17.634c-.308-.154-2.314-1.08-2.622-1.234a.727.727,0,0,0-.925.154c-.308.308-.925,1.234-1.234,1.542-.154.308-.463.308-.771.154A12.609,12.609,0,0,1,13.169,16.4a17.754,17.754,0,0,1-2.159-2.622.678.678,0,0,1,.154-.771c.154-.154.308-.463.617-.617a1.169,1.169,0,0,0,.308-.617.469.469,0,0,0,0-.617A27.416,27.416,0,0,1,10.856,8.38C10.7,7.3,10.393,7.3,10.085,7.3H9.314a1.759,1.759,0,0,0-.925.463A4.439,4.439,0,0,0,7,11a8.079,8.079,0,0,0,1.542,4.01,16.444,16.444,0,0,0,6.478,5.707,12.089,12.089,0,0,0,2.159.771,4.405,4.405,0,0,0,2.468.154,4,4,0,0,0,2.622-1.851,2.579,2.579,0,0,0,.154-1.851l-.617-.308"
+                transform="translate(-7 -7.3)" fill="#22b1bf" />
+            </svg>
+
+            <a class="tel_link" href="tel:055245254">055245254</a>
+          </div>
+
+          <div class="messages_btn">
+            <a class="site_message_link seconde_link__" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14.016" height="14.003" viewBox="0 0 14.016 14.003">
+                <path id="chat-circle-svgrepo-com"
+                  d="M10,17.015a6.957,6.957,0,0,0,3.737-1.09l3.269,1.09-1.09-3.269A7,7,0,1,0,10,17.015ZM6.891,7.284h6.228a.778.778,0,1,1,0,1.557H6.891a.778.778,0,0,1,0-1.557Zm0,3.892H10a.778.778,0,0,1,0,1.557H6.891a.778.778,0,1,1,0-1.557Z"
+                  transform="translate(-2.995 -3.012)" />
+              </svg>
+
+              محادثة داخل الموقع
+            </a>
+
+            <a class="whats_message_link seconde_link__" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19.906" height="20.025" viewBox="0 0 19.906 20.025">
+                <path id="Path_31387" data-name="Path 31387"
+                  d="M16.6,14c-.2-.1-1.5-.7-1.7-.8a.471.471,0,0,0-.6.1c-.2.2-.6.8-.8,1-.1.2-.3.2-.5.1a8.175,8.175,0,0,1-2-1.2,11.511,11.511,0,0,1-1.4-1.7.44.44,0,0,1,.1-.5c.1-.1.2-.3.4-.4a.758.758,0,0,0,.2-.4.3.3,0,0,0,0-.4A17.776,17.776,0,0,1,9.5,8c-.1-.7-.3-.7-.5-.7H8.5a1.141,1.141,0,0,0-.6.3A2.878,2.878,0,0,0,7,9.7a5.238,5.238,0,0,0,1,2.6A10.662,10.662,0,0,0,12.2,16a7.838,7.838,0,0,0,1.4.5,2.856,2.856,0,0,0,1.6.1,2.591,2.591,0,0,0,1.7-1.2,1.672,1.672,0,0,0,.1-1.2l-.4-.2m2.5-9.1a9.968,9.968,0,0,0-15.7,12L2,22l5.3-1.4a9.881,9.881,0,0,0,14.6-8.7,9.74,9.74,0,0,0-2.8-7m-2.7,14A8.392,8.392,0,0,1,12,20.2a8.769,8.769,0,0,1-4.2-1.1l-.3-.2-3.1.8.8-3L5,16.4A8.4,8.4,0,0,1,7.7,4.9,8.135,8.135,0,0,1,19,7.5a8.252,8.252,0,0,1-2.6,11.4"
+                  transform="translate(-2 -1.975)" />
+              </svg>
+
+              مراسلة واتس
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile_abstract">
+        <!-- tabs pageination -->
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-deals-tab" data-toggle="tab" href="#nav-deals" role="tab"
+            aria-controls="nav-deals" aria-selected="true">الصفقات</a>
+          <a class="nav-item nav-link" id="nav-abstract-tab" data-toggle="tab" href="#nav-abstract" role="tab"
+            aria-controls="nav-abstract" aria-selected="false">نبذة مختصرة</a>
+        </div>
+
+        <!-- start tabs content -->
+        <div class="tab-content" id="nav-tabContent">
+          <!-- first tab -->
+          <div class="tab-pane fade show active" id="nav-deals" role="tabpanel" aria-labelledby="nav-deals-tab">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <div class="deal_block__">
+                  <a class="img_block" href="#">
+                    <figure class="figure__ loading-omd asp-om">
+                      <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg" alt="deals section block" />
+                    </figure>
+
+                    <!-- add to fav -->
+                    <button class="deal_like active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639" viewBox="0 0 24.869 23.639">
+                        <g transform="translate(0.773 0.794)">
+                          <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                            <g transform="translate(0)">
+                              <path
+                                d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                transform="translate(0 0)" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                  <div class="description__">
+                    <a class="head__" href="#">مشروع تجارة السيارات الألمانية</a>
+                    <p class="parg__">
+                      حيث تعتبر السيارات الالمانية من افضل انواع السيارات على
+                      الاطلاق
+                    </p>
+                    <a class="deal_info_link" href="#">
+                      تفاصيل الصفقة
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.511" height="10.195"
+                          viewBox="0 0 14.511 10.195">
+                          <path id="arrow-left"
+                            d="M.614,8.821,5.32,4.114a.392.392,0,1,1,.555.555L1.839,8.705H14.618a.392.392,0,1,1,0,.784H1.839l4.036,4.036a.392.392,0,0,1-.555.555L.613,9.374a.392.392,0,0,1,0-.555Z"
+                            transform="translate(-0.499 -4)" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="deal_block__">
+                  <a class="img_block" href="#">
+                    <figure class="figure__ loading-omd asp-om">
+                      <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg" alt="deals section block" />
+                    </figure>
+
+                    <!-- add to fav -->
+                    <button class="deal_like active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639" viewBox="0 0 24.869 23.639">
+                        <g transform="translate(0.773 0.794)">
+                          <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                            <g transform="translate(0)">
+                              <path
+                                d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                transform="translate(0 0)" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                  <div class="description__">
+                    <a class="head__" href="#">مشروع تجارة السيارات الألمانية</a>
+                    <p class="parg__">
+                      حيث تعتبر السيارات الالمانية من افضل انواع السيارات على
+                      الاطلاق
+                    </p>
+                    <a class="deal_info_link" href="#">
+                      تفاصيل الصفقة
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.511" height="10.195"
+                          viewBox="0 0 14.511 10.195">
+                          <path id="arrow-left"
+                            d="M.614,8.821,5.32,4.114a.392.392,0,1,1,.555.555L1.839,8.705H14.618a.392.392,0,1,1,0,.784H1.839l4.036,4.036a.392.392,0,0,1-.555.555L.613,9.374a.392.392,0,0,1,0-.555Z"
+                            transform="translate(-0.499 -4)" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="deal_block__">
+                  <a class="img_block" href="#">
+                    <figure class="figure__ loading-omd asp-om">
+                      <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg" alt="deals section block" />
+                    </figure>
+
+                    <!-- add to fav -->
+                    <button class="deal_like active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639" viewBox="0 0 24.869 23.639">
+                        <g transform="translate(0.773 0.794)">
+                          <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                            <g transform="translate(0)">
+                              <path
+                                d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                transform="translate(0 0)" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                  <div class="description__">
+                    <a class="head__" href="#">مشروع تجارة السيارات الألمانية</a>
+                    <p class="parg__">
+                      حيث تعتبر السيارات الالمانية من افضل انواع السيارات على
+                      الاطلاق
+                    </p>
+                    <a class="deal_info_link" href="#">
+                      تفاصيل الصفقة
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.511" height="10.195"
+                          viewBox="0 0 14.511 10.195">
+                          <path id="arrow-left"
+                            d="M.614,8.821,5.32,4.114a.392.392,0,1,1,.555.555L1.839,8.705H14.618a.392.392,0,1,1,0,.784H1.839l4.036,4.036a.392.392,0,0,1-.555.555L.613,9.374a.392.392,0,0,1,0-.555Z"
+                            transform="translate(-0.499 -4)" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="deal_block__">
+                  <a class="img_block" href="#">
+                    <figure class="figure__ loading-omd asp-om">
+                      <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg" alt="deals section block" />
+                    </figure>
+
+                    <!-- add to fav -->
+                    <button class="deal_like active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639" viewBox="0 0 24.869 23.639">
+                        <g transform="translate(0.773 0.794)">
+                          <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                            <g transform="translate(0)">
+                              <path
+                                d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                transform="translate(0 0)" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                  <div class="description__">
+                    <a class="head__" href="#">مشروع تجارة السيارات الألمانية</a>
+                    <p class="parg__">
+                      حيث تعتبر السيارات الالمانية من افضل انواع السيارات على
+                      الاطلاق
+                    </p>
+                    <a class="deal_info_link" href="#">
+                      تفاصيل الصفقة
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.511" height="10.195"
+                          viewBox="0 0 14.511 10.195">
+                          <path id="arrow-left"
+                            d="M.614,8.821,5.32,4.114a.392.392,0,1,1,.555.555L1.839,8.705H14.618a.392.392,0,1,1,0,.784H1.839l4.036,4.036a.392.392,0,0,1-.555.555L.613,9.374a.392.392,0,0,1,0-.555Z"
+                            transform="translate(-0.499 -4)" />
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second tab  -->
+          <div class="tab-pane fade swiper_test abstract_tab" id="nav-abstract" role="tabpanel"
+            aria-labelledby="nav-abstract-tab">
+            <p class="abstract_parag">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+              الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+              إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
+              استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو
+              (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي
+              وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج
+              عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر
+              العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
+              ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق
+              الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها
+            </p>
+          </div>
+        </div>
+        <!-- end tabs content -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="footer_content__">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <figure class="footer-logo__ figure-om loading-omd">
+              <img class="lazy-omd img-om" data-src="assets/images/footer-logo.png" alt=".." width="" height="" />
+            </figure>
+            <p class="footer_parg__">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+            </p>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">روابط سريعة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">القطاعات</a></li>
+                  <li>
+                    <a href="#!">الأقسام</a>
+                  </li>
+                  <li><a href="#!">نبذة عن منصة </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">المساعدة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">الشروط والأحكام</a></li>
+                  <li>
+                    <a href="#!">الأسئلة الشائعة</a>
+                  </li>
+                  <li><a href="#!">اتصل بنا</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+                <ul class="footer_list__ contact_info list-unstyled">
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/whatsapp.svg" alt=".." width="" height="" />
+                      </figure>
+                      +966 123-456-7890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/email.svg" alt=".." width="" height="" />
+                      </figure>
+                      name123@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/location.svg" alt=".." width="" height="" />
+                      </figure>
+                      طريق الملك فهد
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights_content___">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__">
+              جميع الحقوق محفوظة - تصميم وبرمجة 2022 &copy;
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <ul class="footer_socials__ list-unstyled">
+              <li class="li__">
+                <a href="#!" class="link__">
+                  <img class="img-om" src="./assets/images/socials/twitter.png" alt=".." width="" height="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__ end__">
+              تصميم وتطوير
+              <a href="#!">
+                <img src="./assets/images/copyrights.png" alt=".." />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

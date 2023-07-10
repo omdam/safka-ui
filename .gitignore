@@ -1,0 +1,10 @@
+# OSX
+#
+*.config
+assets\sass\prepros.config
+
+# IDE
+.idea
+local.properties
+*.iml
+.vscode

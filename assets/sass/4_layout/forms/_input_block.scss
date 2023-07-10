@@ -1,0 +1,24 @@
+.input__ {
+  height: 56px;
+  border: solid 1px $borderColor;
+  background-color: #fff;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: $headingMainColor;
+  padding: 20px 29px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  border-radius: $mainBorderRidus;
+
+  &:focus,
+  &:hover {
+    border-color: $secondaryColor;
+  }
+
+  &::placeholder {
+    color: #aaaaaa;
+  }
+}

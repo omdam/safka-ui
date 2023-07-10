@@ -1,0 +1,116 @@
+.link-om {
+  color: $secondaryColor;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+
+
+  &.with_icon {
+    display: flex;
+    align-items: center;
+
+    .icon__ {
+      margin-inline-end: 5px;
+    }
+  }
+}
+
+.seconde_link__ {
+  text-decoration: none;
+  color: $secondaryColor;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  border: 1px solid $secondaryColor;
+  background-color: #E4F9FB;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.links_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link__om {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.5s;
+
+
+  &.twitter_like {
+    border-color: $twitterColor;
+    color: $twitterColor;
+    font-size: 12px;
+    height: 26px;
+    width: 85px;
+
+
+    &:hover {
+      background-color: rgba($twitterColor, 0.1);
+    }
+  }
+
+  &.facebook_link {
+    border-color: $facebookColor;
+    color: $facebookColor;
+    font-size: 12px;
+    height: 26px;
+    width: 85px;
+
+
+    &:hover {
+      background-color: rgba($facebookColor, 0.1);
+    }
+  }
+
+  &.linkedin_link {
+    border-color: $linkedinColor;
+    color: $linkedinColor;
+    font-size: 12px;
+    height: 26px;
+    width: 85px;
+
+
+    &:hover {
+      background-color: rgba($linkedinColor, 0.1);
+    }
+  }
+
+  &.add_deal_link {
+    font-size: 16px;
+    max-width: 160px;
+    height: 56px;
+    background-color: #fff;
+    color: $secondaryColor;
+
+    @include sm {
+      min-width: 100%;
+    }
+
+    &:hover {
+      background-color: $mainBackgroundColor;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

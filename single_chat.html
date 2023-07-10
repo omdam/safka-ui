@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Safka</title>
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- start header  -->
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
+
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+              <div class="sing-up-blocks nav_sign_block__">
+                <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                <a class="singup_link" href="register_signin.html">
+                  <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                    <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                  </figure>
+                  حساب جديد
+                </a>
+              </div>
+              <ul class="nav-list-om list-unstyled">
+                <li class="active">
+                  <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="mega_menu__">
+                  <a class="" href="department.html"> نبذة عنا </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">القطاعات </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">الأقسام</a>
+                </li>
+                <li>
+                  <a href="my_ads.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+            <a class="header_logo__" href="index.html">
+              <figure class="figure__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+            <ul class="toolbar_options__ list-unstyled">
+              <li class="block__">
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__">
+                      <img src="./assets/images/saudi.png" alt="" />
+                    </figure>
+                    العربية
+                  </a>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block__ larg_size_only__">
+                <div class="sing-up-blocks">
+                  <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                  <a class="singup_link" href="register_signin.html">
+                    <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+              </li>
+
+              <!-- <li class="block__ dropdown__">
+                <a class="info_link_block__" href="#!">
+                  مرحبا , خالد
+                </a>
+                <ul class="sub-menu__">
+                  <li>
+                    <a class="modify" href="modify_my_data.html">
+                      تعديل بياناتى
+                    </a>
+                  </li>
+                  <li>
+                    <a class="orders" href="change_password.html">
+                      طلبات الأحلام
+                    </a>
+                  </li>
+                  <li>
+                    <a class="wallet" href="change_password.html">
+                      محفظتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="signout_link__" href="#!">
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__">
+                <a class="notifications_block__" href="#!">
+                  <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                  <span class="badge">12</span>
+                </a>
+              </li> -->
+              <!-- start active nenu button in small sizes  -->
+              <li class="block__ small_size_only__">
+                <button class="menu_button__ button__" id="menu-butt-activ-om">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+              <!-- end active nenu button in small sizes  -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <!-- end header  -->
+
+  <!-- Start Breadcrumb -->
+  <section class="breadcrumb_section">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="item__">
+          <a class="bread_link home_link__" href="index.html">الرئيسية</a>
+        </li>
+        <li class="item__">
+          <span class="bread_current">القطاعات</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Breadcrumb -->
+
+  <!-- Start Single Chat -->
+  <main class="single_chat_page default_page__">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="chat_block">
+            <div class="chat_block_head">
+              <h4 class="head__">مشروع تطوير جامعة الملك فهد</h4>
+              <button class="seconde_link__ call_button">
+                <svg class="phone_icon" id="Group_27287" data-name="Group 27287" xmlns="http://www.w3.org/2000/svg"
+                  width="12.179" height="12.178" viewBox="0 0 12.179 12.178">
+                  <path id="Path_29514" data-name="Path 29514"
+                    d="M7.233,14.345l1.722-.2a1.35,1.35,0,0,1,1.112.386l1.247,1.247a10.2,10.2,0,0,0,4.468-4.468L14.528,10.06a1.35,1.35,0,0,1-.386-1.112l.2-1.708a1.357,1.357,0,0,1,1.349-1.2H16.86a1.345,1.345,0,0,1,1.356,1.4A11.519,11.519,0,0,1,7.443,18.216a1.345,1.345,0,0,1-1.4-1.356V15.687A1.344,1.344,0,0,1,7.233,14.345Z"
+                    transform="translate(-6.04 -6.04)" />
+                </svg>
+
+                اتصال
+              </button>
+            </div>
+
+            <div class="chat_content">
+              <div class="message_receive message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/firstPerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">طارق محمد</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">السلام عليك أخي</p>
+                </div>
+              </div>
+
+              <div class="message_sender message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/secondePerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">محمد الجوهري</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">
+                    وعليكم السلام أخي أولا شكرا على وقتك من فضلك ارسل لي
+                    تفاصيل الصفقة
+                  </p>
+                </div>
+              </div>
+
+              <div class="message_receive message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/firstPerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">طارق محمد</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">تفضل أخي</p>
+                  <div class="file_download">
+                    <figure class="figure__ icon__ loading-omd asp-om">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/pdf-svgrepo-com.svg"
+                        alt="deals section block" />
+                    </figure>
+                    <div class="file_info">
+                      <p class="file_name">
+                        SRS1.1.pdf
+                        <span class="file_size">(45.7KB)</span>
+                      </p>
+
+                      <button class="dwonload_link_">تحميل الملف</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="message_sender message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/secondePerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">محمد الجوهري</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">
+                    وعليكم السلام أخي أولا شكرا على وقتك من فضلك ارسل لي
+                    تفاصيل الصفقة
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="message_input_block">
+              <form class="messsage_input_form" action="">
+                <input class="input__" type="text" placeholder="اكتب رسالتك" />
+
+                <div class="form_buttons_wrapper__">
+                  <button class="label_for_file_input" for="file-input">
+                    <img class="send_icon" src="assets/images/shapes/file_upload.svg" alt="" />
+                  </button>
+                  <button class="send_button">
+                    <img class="send_icon" src="assets/images/shapes/send.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="deal_info_block">
+            <div class="deal_info_head">
+              <h4 class="site_head__">بيانات الصفقة</h4>
+            </div>
+            <div class="info_block_content">
+              <div class="strip">
+                <p class="title">وقت النشر</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                    <path id="Path_2235" data-name="Path 2235"
+                      d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                      transform="translate(-609.25 -197.25)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1.5" />
+                  </svg>
+
+                  منذ ٧ ساعات
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">تاريخ النشر</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Path_31385" data-name="Path 31385"
+                      d="M15.6,3.6H14V2.8a.8.8,0,1,0-1.6,0v.8H7.6V2.8A.8.8,0,0,0,6,2.8v.8H4.4A2.4,2.4,0,0,0,2,6v9.6A2.4,2.4,0,0,0,4.4,18H15.6A2.4,2.4,0,0,0,18,15.6V6a2.4,2.4,0,0,0-2.4-2.4Zm.8,12a.8.8,0,0,1-.8.8H4.4a.8.8,0,0,1-.8-.8V10H16.4Zm0-7.2H3.6V6a.8.8,0,0,1,.8-.8H6V6A.8.8,0,0,0,7.6,6V5.2h4.8V6A.8.8,0,1,0,14,6V5.2h1.6a.8.8,0,0,1,.8.8Z"
+                      transform="translate(-2 -2)" fill="#22b1bf" />
+                  </svg>
+
+                  25/03/2023
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">تصنيف الإعلان</p>
+
+                <a class="seconde_link__ title_data link__" href="#">
+                  تعليمي
+                </a>
+              </div>
+              <div class="strip">
+                <p class="title">المنطقة</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.805" height="20.207" viewBox="0 0 16.805 20.207">
+                    <g id="Group_28533" data-name="Group 28533" transform="translate(0.75 0.75)">
+                      <path id="Path_31386" data-name="Path 31386"
+                        d="M15.305,7.653c0,5.952-7.653,11.054-7.653,11.054S0,13.6,0,7.653a7.653,7.653,0,0,1,15.305,0Z"
+                        fill="none" stroke="#22b1bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        fill-rule="evenodd" />
+                      <circle id="Ellipse_7138" data-name="Ellipse 7138" cx="2.551" cy="2.551" r="2.551"
+                        transform="translate(5.102 5.102)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                  الشرقية
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">المدينة</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.805" height="20.207" viewBox="0 0 16.805 20.207">
+                    <g id="Group_28533" data-name="Group 28533" transform="translate(0.75 0.75)">
+                      <path id="Path_31386" data-name="Path 31386"
+                        d="M15.305,7.653c0,5.952-7.653,11.054-7.653,11.054S0,13.6,0,7.653a7.653,7.653,0,0,1,15.305,0Z"
+                        fill="none" stroke="#22b1bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        fill-rule="evenodd" />
+                      <circle id="Ellipse_7138" data-name="Ellipse 7138" cx="2.551" cy="2.551" r="2.551"
+                        transform="translate(5.102 5.102)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                  جدة
+                </p>
+              </div>
+            </div>
+            <a class="deal_link link-om" href="#"> تفاصيل الصفقة </a>
+          </div>
+
+          <div class="contact_info_block">
+            <h4 class="contact_info_head">معلومات التواصل</h4>
+            <div class="info_block_content">
+              <div class="strip">
+                <p class="title">تاريخ التواصل</p>
+                <p class="title_data">
+                  <svg id="Group_27276" data-name="Group 27276" xmlns="http://www.w3.org/2000/svg" width="19.431"
+                    height="19.431" viewBox="0 0 19.431 19.431">
+                    <path id="Path_29505" data-name="Path 29505"
+                      d="M7.619,8H18.954a1.619,1.619,0,0,1,1.619,1.619V20.954a1.619,1.619,0,0,1-1.619,1.619H7.619A1.619,1.619,0,0,1,6,20.954V9.619A1.619,1.619,0,0,1,7.619,8Z"
+                      transform="translate(-3.571 -4.762)" fill="none" stroke="#767676" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1.5" />
+                    <path id="Path_29506" data-name="Path 29506" d="M32,4V7.238" transform="translate(-19.046 -2.381)"
+                      fill="none" stroke="#767676" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    <path id="Path_29507" data-name="Path 29507" d="M16,4V7.238" transform="translate(-9.523 -2.381)"
+                      fill="none" stroke="#767676" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    <path id="Path_29508" data-name="Path 29508" d="M6,20H20.573" transform="translate(-3.571 -11.904)"
+                      fill="none" stroke="#767676" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    <path id="Path_29509" data-name="Path 29509" d="M0,0H19.431V19.431H0Z" fill="none" />
+                  </svg>
+
+                  26 مايو 2023
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">رقم الجوال</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.525" height="14.445" viewBox="0 0 15.525 14.445">
+                    <path id="Path_31136" data-name="Path 31136"
+                      d="M21.806,17.634c-.308-.154-2.314-1.08-2.622-1.234a.727.727,0,0,0-.925.154c-.308.308-.925,1.234-1.234,1.542-.154.308-.463.308-.771.154A12.609,12.609,0,0,1,13.169,16.4a17.754,17.754,0,0,1-2.159-2.622.678.678,0,0,1,.154-.771c.154-.154.308-.463.617-.617a1.169,1.169,0,0,0,.308-.617.469.469,0,0,0,0-.617A27.416,27.416,0,0,1,10.856,8.38C10.7,7.3,10.393,7.3,10.085,7.3H9.314a1.759,1.759,0,0,0-.925.463A4.439,4.439,0,0,0,7,11a8.079,8.079,0,0,0,1.542,4.01,16.444,16.444,0,0,0,6.478,5.707,12.089,12.089,0,0,0,2.159.771,4.405,4.405,0,0,0,2.468.154,4,4,0,0,0,2.622-1.851,2.579,2.579,0,0,0,.154-1.851l-.617-.308"
+                      transform="translate(-7 -7.3)" fill="#22b1bf" />
+                  </svg>
+
+                  <a class="tel_link" href="tel:055245254">055245254</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Single Chat -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="footer_content__">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <figure class="footer-logo__ figure-om loading-omd">
+              <img class="lazy-omd img-om" data-src="assets/images/footer-logo.png" alt=".." width="" height="" />
+            </figure>
+            <p class="footer_parg__">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+            </p>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">روابط سريعة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">القطاعات</a></li>
+                  <li>
+                    <a href="#!">الأقسام</a>
+                  </li>
+                  <li><a href="#!">نبذة عن منصة </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">المساعدة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">الشروط والأحكام</a></li>
+                  <li>
+                    <a href="#!">الأسئلة الشائعة</a>
+                  </li>
+                  <li><a href="#!">اتصل بنا</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+                <ul class="footer_list__ contact_info list-unstyled">
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/whatsapp.svg" alt=".." width="" height="" />
+                      </figure>
+                      +966 123-456-7890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/email.svg" alt=".." width="" height="" />
+                      </figure>
+                      name123@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/location.svg" alt=".." width="" height="" />
+                      </figure>
+                      طريق الملك فهد
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights_content___">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__">
+              جميع الحقوق محفوظة - تصميم وبرمجة 2022 &copy;
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <ul class="footer_socials__ list-unstyled">
+              <li class="li__">
+                <a href="#!" class="link__">
+                  <img class="img-om" src="./assets/images/socials/twitter.png" alt=".." width="" height="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__ end__">
+              تصميم وتطوير
+              <a href="#!">
+                <img src="./assets/images/copyrights.png" alt=".." />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>

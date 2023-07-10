@@ -1,0 +1,79 @@
+.sing-up-blocks {
+  display: flex;
+  align-items: center;
+
+  @include sm {
+    display: block;
+  }
+
+  .singup_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    height: 48px;
+    min-width: 162px;
+    padding: 3px 20px;
+    border-radius: $mainBorderRidus;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+
+    @include sm {
+      border-radius: 0;
+      margin-bottom: 0;
+      height: 40px;
+      min-width: 70px;
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+
+    &:not(:last-child) {
+      margin-inline-end: 16px;
+
+      @include sm {
+        margin-inline-end: 0;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.9);
+      color: #fff;
+    }
+
+    &.login_link {
+      border-color: transparent;
+      background-color: transparent;
+      color: $headingMainColor;
+      min-width: max-content;
+      padding: 0;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+
+      @include sm {
+        background-color: rgba(#fff, 0.2);
+        color: #fff;
+        margin-bottom: 10px;
+      }
+    }
+
+    .icon__ {
+      background-color: transparent !important;
+      margin-inline-end: 5px;
+    }
+  }
+
+  &.nav_sign_block__ {
+    display: none;
+
+    @include sm {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+}

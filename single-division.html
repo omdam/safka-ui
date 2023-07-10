@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Safka</title>
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- start header  -->
+  <header class="main_header__">
+    <div class="fixed_header__">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-12">
+            <nav class="nav-om" id="navbar-menu-om">
+              <button class="close-button__"></button>
+
+              <figure class="figure__ nav_logo__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+              <div class="sing-up-blocks nav_sign_block__">
+                <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                <a class="singup_link" href="register_signin.html">
+                  <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                    <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                  </figure>
+                  حساب جديد
+                </a>
+              </div>
+              <ul class="nav-list-om list-unstyled">
+                <li class="active">
+                  <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="mega_menu__">
+                  <a class="" href="department.html"> نبذة عنا </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">القطاعات </a>
+                </li>
+                <li>
+                  <a href="my_ads.html">الأقسام</a>
+                </li>
+                <li>
+                  <a href="my_ads.html">اتصل بنا</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+            <a class="header_logo__" href="index.html">
+              <figure class="figure__">
+                <img src="assets/images/logo.png" alt=".." />
+              </figure>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+            <ul class="toolbar_options__ list-unstyled">
+              <li class="block__">
+                <div class="lang__ dropdown__">
+                  <a class="lang_link__ butt__" href="#!">
+                    <figure class="figure__">
+                      <img src="./assets/images/saudi.png" alt="" />
+                    </figure>
+                    العربية
+                  </a>
+                  <ul class="sub-menu__">
+                    <li><a href="#!">العربية</a></li>
+                    <li><a href="#!">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="block__ larg_size_only__">
+                <div class="sing-up-blocks">
+                  <a class="singup_link login_link" href="register_signin.html">تسجيل الدخول</a>
+                  <a class="singup_link" href="register_signin.html">
+                    <figure class="figure__ icon__ loading-omd" style="background-color: #dbecff">
+                      <img class="lazy-omd img-om" data-src="assets/images/shapes/header_user.svg" alt=".." />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+              </li>
+
+              <!-- <li class="block__ dropdown__">
+                <a class="info_link_block__" href="#!">
+                  مرحبا , خالد
+                </a>
+                <ul class="sub-menu__">
+                  <li>
+                    <a class="modify" href="modify_my_data.html">
+                      تعديل بياناتى
+                    </a>
+                  </li>
+                  <li>
+                    <a class="orders" href="change_password.html">
+                      طلبات الأحلام
+                    </a>
+                  </li>
+                  <li>
+                    <a class="wallet" href="change_password.html">
+                      محفظتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="signout_link__" href="#!">
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__">
+                <a class="notifications_block__" href="#!">
+                  <img class="img-om" src="./assets//images/notification.svg" alt=".." />
+                  <span class="badge">12</span>
+                </a>
+              </li> -->
+              <!-- start active nenu button in small sizes  -->
+              <li class="block__ small_size_only__">
+                <button class="menu_button__ button__" id="menu-butt-activ-om">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+              <!-- end active nenu button in small sizes  -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <!-- end header  -->
+
+  <!-- Start Breadcrumb -->
+  <section class="breadcrumb_section">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="item__">
+          <a class="bread_link home_link__" href="index.html">الرئيسية</a>
+        </li>
+        <li class="item__">
+          <a class="bread_link" href="#">قطاع التعليم</a>
+        </li>
+        <li class="item__">
+          <a class="bread_link" href="#">الأقسام</a>
+        </li>
+        <li class="item__">
+          <span class="bread_current">الجامعات</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Breadcrumb -->
+
+  <!-- Start Divisions -->
+  <main class="divisions_page default_page__">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="post_section__ section__">
+            <div class="post_content">
+              <h2 class="title__">مشروع تطوير جامعة الملك فهد</h2>
+              <div class="price_report_block__">
+                <p class="price_title__">
+                  السعر من
+                  <span class="price min_price">25000</span>
+                  الي
+                  <span class="price max_price">25000 رس</span>
+                </p>
+                <a href="#" class="report_link__ link-om with_icon">
+                  <figure class="icon__ figure__">
+                    <img src="./assets/images/shapes/report.svg" alt=".." />
+                  </figure>
+                  ابلاغ عن مشكلة
+                </a>
+              </div>
+
+              <div class="slide_block__">
+                <div class="single-page-slider-wrapper">
+                  <div class="swiper-container swiper">
+                    <!-- Start swiper content -->
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="deal_block__">
+                          <a class="img_block" href="#">
+                            <figure class="figure__ loading-omd asp-om">
+                              <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg"
+                                alt="deals section block" />
+                            </figure>
+
+                            <!-- add to fav -->
+                            <button class="deal_like active">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639"
+                                viewBox="0 0 24.869 23.639">
+                                <g transform="translate(0.773 0.794)">
+                                  <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                                    <g transform="translate(0)">
+                                      <path
+                                        d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                        transform="translate(0 0)" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="deal_block__">
+                          <a class="img_block" href="#">
+                            <figure class="figure__ loading-omd asp-om">
+                              <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg"
+                                alt="deals section block" />
+                            </figure>
+
+                            <!-- add to fav -->
+                            <button class="deal_like active">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639"
+                                viewBox="0 0 24.869 23.639">
+                                <g transform="translate(0.773 0.794)">
+                                  <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                                    <g transform="translate(0)">
+                                      <path
+                                        d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                        transform="translate(0 0)" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="deal_block__">
+                          <a class="img_block" href="#">
+                            <figure class="figure__ loading-omd asp-om">
+                              <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg"
+                                alt="deals section block" />
+                            </figure>
+
+                            <!-- add to fav -->
+                            <button class="deal_like active">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639"
+                                viewBox="0 0 24.869 23.639">
+                                <g transform="translate(0.773 0.794)">
+                                  <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                                    <g transform="translate(0)">
+                                      <path
+                                        d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                        transform="translate(0 0)" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="deal_block__">
+                          <a class="img_block" href="#">
+                            <figure class="figure__ loading-omd asp-om">
+                              <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg"
+                                alt="deals section block" />
+                            </figure>
+
+                            <!-- add to fav -->
+                            <button class="deal_like active">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639"
+                                viewBox="0 0 24.869 23.639">
+                                <g transform="translate(0.773 0.794)">
+                                  <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                                    <g transform="translate(0)">
+                                      <path
+                                        d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                        transform="translate(0 0)" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="deal_block__">
+                          <a class="img_block" href="#">
+                            <figure class="figure__ loading-omd asp-om">
+                              <img class="lazy-omd img-om" data-src="assets/images/deals/01.jpg"
+                                alt="deals section block" />
+                            </figure>
+
+                            <!-- add to fav -->
+                            <button class="deal_like active">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23.639"
+                                viewBox="0 0 24.869 23.639">
+                                <g transform="translate(0.773 0.794)">
+                                  <g data-name="Iconly/Light/Heart" transform="translate(0 0)">
+                                    <g transform="translate(0)">
+                                      <path
+                                        d="M11.368,21.916A42.766,42.766,0,0,1,3.976,16.16,14.718,14.718,0,0,1,.458,10.551C-.863,6.445.68,1.744,5,.353a7.338,7.338,0,0,1,6.659,1.122h0A7.349,7.349,0,0,1,18.316.353c4.317,1.391,5.871,6.092,4.55,10.2a14.718,14.718,0,0,1-3.518,5.609,42.765,42.765,0,0,1-7.392,5.755l-.289.18Z"
+                                        transform="translate(0 0)" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Ens swiper content -->
+                  </div>
+                  <div class="swiper_buttons_group__">
+                    <div class="swiper-button-prev single_page_button"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next single_page_button"></div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="site_head__">تفاصيل الصفقة</h2>
+              <p class="parag__ main_parag__">
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة وشركة مجمع واحة الأعمال التابعة اليوم
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة وشركة مجمع واحة الأعمال التابعة اليوم
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة وشركة مجمع واحة الأعمال التابعة اليوم
+              </p>
+              <p class="parag__ parag_point__">
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة
+              </p>
+              <p class="parag__ parag_point__">
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة
+              </p>
+              <p class="parag__ parag_point__">
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة
+              </p>
+              <p class="parag__ parag_point__">
+                أعلنت جامعة الملك فهد للبترول والمعادن ممثلة في شركة وادي
+                الظهران للتقنية القابضة
+              </p>
+            </div>
+
+            <div class="contacts_buttons_block__">
+              <div class="tel_num">
+                <span class="name">رقم الجوال</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.525" height="14.445" viewBox="0 0 15.525 14.445">
+                  <path id="Path_31136" data-name="Path 31136"
+                    d="M21.806,17.634c-.308-.154-2.314-1.08-2.622-1.234a.727.727,0,0,0-.925.154c-.308.308-.925,1.234-1.234,1.542-.154.308-.463.308-.771.154A12.609,12.609,0,0,1,13.169,16.4a17.754,17.754,0,0,1-2.159-2.622.678.678,0,0,1,.154-.771c.154-.154.308-.463.617-.617a1.169,1.169,0,0,0,.308-.617.469.469,0,0,0,0-.617A27.416,27.416,0,0,1,10.856,8.38C10.7,7.3,10.393,7.3,10.085,7.3H9.314a1.759,1.759,0,0,0-.925.463A4.439,4.439,0,0,0,7,11a8.079,8.079,0,0,0,1.542,4.01,16.444,16.444,0,0,0,6.478,5.707,12.089,12.089,0,0,0,2.159.771,4.405,4.405,0,0,0,2.468.154,4,4,0,0,0,2.622-1.851,2.579,2.579,0,0,0,.154-1.851l-.617-.308"
+                    transform="translate(-7 -7.3)" fill="#22b1bf" />
+                </svg>
+
+                <a class="tel_link" href="tel:055245254">055245254</a>
+              </div>
+
+              <div class="messages_btn">
+                <button type="button" class="submit-button__ like_button__">
+                  <figure class="icon__ figure__">
+                    <img src="./assets/images/shapes/like.svg" alt=".." />
+                  </figure>
+                  أعجبني
+                </button>
+
+                <a class="site_message_link seconde_link__" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14.016" height="14.003" viewBox="0 0 14.016 14.003">
+                    <path id="chat-circle-svgrepo-com"
+                      d="M10,17.015a6.957,6.957,0,0,0,3.737-1.09l3.269,1.09-1.09-3.269A7,7,0,1,0,10,17.015ZM6.891,7.284h6.228a.778.778,0,1,1,0,1.557H6.891a.778.778,0,0,1,0-1.557Zm0,3.892H10a.778.778,0,0,1,0,1.557H6.891a.778.778,0,1,1,0-1.557Z"
+                      transform="translate(-2.995 -3.012)" />
+                  </svg>
+
+                  محادثة داخل الموقع
+                </a>
+
+                <a class="whats_message_link seconde_link__" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19.906" height="20.025" viewBox="0 0 19.906 20.025">
+                    <path id="Path_31387" data-name="Path 31387"
+                      d="M16.6,14c-.2-.1-1.5-.7-1.7-.8a.471.471,0,0,0-.6.1c-.2.2-.6.8-.8,1-.1.2-.3.2-.5.1a8.175,8.175,0,0,1-2-1.2,11.511,11.511,0,0,1-1.4-1.7.44.44,0,0,1,.1-.5c.1-.1.2-.3.4-.4a.758.758,0,0,0,.2-.4.3.3,0,0,0,0-.4A17.776,17.776,0,0,1,9.5,8c-.1-.7-.3-.7-.5-.7H8.5a1.141,1.141,0,0,0-.6.3A2.878,2.878,0,0,0,7,9.7a5.238,5.238,0,0,0,1,2.6A10.662,10.662,0,0,0,12.2,16a7.838,7.838,0,0,0,1.4.5,2.856,2.856,0,0,0,1.6.1,2.591,2.591,0,0,0,1.7-1.2,1.672,1.672,0,0,0,.1-1.2l-.4-.2m2.5-9.1a9.968,9.968,0,0,0-15.7,12L2,22l5.3-1.4a9.881,9.881,0,0,0,14.6-8.7,9.74,9.74,0,0,0-2.8-7m-2.7,14A8.392,8.392,0,0,1,12,20.2a8.769,8.769,0,0,1-4.2-1.1l-.3-.2-3.1.8.8-3L5,16.4A8.4,8.4,0,0,1,7.7,4.9,8.135,8.135,0,0,1,19,7.5a8.252,8.252,0,0,1-2.6,11.4"
+                      transform="translate(-2 -1.975)" />
+                  </svg>
+
+                  مراسلة واتس
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="comments_section section__">
+            <h2 class="title__">
+              تعليقات العملاء
+              <span class="comments_number">(2)</span>
+            </h2>
+
+            <div class="comments_content">
+              <div class="comment__ message_receive message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/secondePerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">يونس مختار</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">
+                    مرحبا أستاذ طارق لقد قرأت عرضك جيداً و يسعدني أن أقدم لك
+                    خبرتي في هذا المجال أنا مهندس يونس أهتم بأدق التفاصيل
+                    لأعطي العمل جمالية عالية و أيضا يمكنني تقديم تعديلات حتى
+                    تكون راضٍ تماماً عن العمل تفضل بالتواصل معي لتزويدي
+                    بالتفاصيل و بدء العمل… تقبل فائق الاحترام
+                  </p>
+                </div>
+              </div>
+              <div class="comment__ message_receive message__">
+                <div class="message_head__">
+                  <figure class="figure__ img__ loading-omd">
+                    <img class="lazy-omd img-om" data-src="assets/images/message/firstPerson.jpg"
+                      alt="deals section block" />
+                  </figure>
+                  <div class="head_info">
+                    <h5 class="sender_name">طارق محمد</h5>
+                    <p class="message_arrived_time">
+                      <svg class="time_icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5"
+                        viewBox="0 0 17.5 17.5">
+                        <path id="Path_2235" data-name="Path 2235"
+                          d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                          transform="translate(-609.25 -197.25)" fill="none" stroke="#767676" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </svg>
+
+                      منذ 7 ساعات
+                    </p>
+                  </div>
+                </div>
+                <div class="message_content">
+                  <p class="parag__">
+                    مرحبا أستاذ يونس لقد قرأت عرضك جيداً وسأقوم بالتواصل معك
+                    عن طريق الرسائل .. شكرا لك تقبل فائق الاحترام
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="message_input_block">
+              <form class="messsage_input_form" action="">
+                <input class="input__" type="text" placeholder="اكتب رسالتك" />
+
+                <div class="form_buttons_wrapper__">
+                  <button class="label_for_file_input" for="file-input">
+                    <img class="send_icon" src="assets/images/shapes/file_upload.svg" alt="" />
+                  </button>
+                  <button class="send_button">
+                    <img class="send_icon" src="assets/images/shapes/send.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="deal_info_block">
+            <div class="deal_info_head">
+              <h4 class="site_head__">بيانات الصفقة</h4>
+            </div>
+            <div class="info_block_content">
+              <div class="strip">
+                <p class="title">وقت النشر</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                    <path id="Path_2235" data-name="Path 2235"
+                      d="M618,201.2V206l3.2,1.6M626,206a8,8,0,1,1-8-8A8,8,0,0,1,626,206Z"
+                      transform="translate(-609.25 -197.25)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="1.5" />
+                  </svg>
+
+                  منذ ٧ ساعات
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">تاريخ النشر</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Path_31385" data-name="Path 31385"
+                      d="M15.6,3.6H14V2.8a.8.8,0,1,0-1.6,0v.8H7.6V2.8A.8.8,0,0,0,6,2.8v.8H4.4A2.4,2.4,0,0,0,2,6v9.6A2.4,2.4,0,0,0,4.4,18H15.6A2.4,2.4,0,0,0,18,15.6V6a2.4,2.4,0,0,0-2.4-2.4Zm.8,12a.8.8,0,0,1-.8.8H4.4a.8.8,0,0,1-.8-.8V10H16.4Zm0-7.2H3.6V6a.8.8,0,0,1,.8-.8H6V6A.8.8,0,0,0,7.6,6V5.2h4.8V6A.8.8,0,1,0,14,6V5.2h1.6a.8.8,0,0,1,.8.8Z"
+                      transform="translate(-2 -2)" fill="#22b1bf" />
+                  </svg>
+
+                  25/03/2023
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">تصنيف الإعلان</p>
+
+                <a class="seconde_link__ title_data link__" href="#">
+                  تعليمي
+                </a>
+              </div>
+              <div class="strip">
+                <p class="title">مجال النشاط</p>
+                <p class="title_data">عقار</p>
+              </div>
+              <div class="strip">
+                <p class="title">القسم</p>
+                <p class="title_data">الجامعات</p>
+              </div>
+              <div class="strip">
+                <p class="title">نوع العقار</p>
+                <p class="title_data">تمليك</p>
+              </div>
+              <div class="strip">
+                <p class="title">المنطقة</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.805" height="20.207" viewBox="0 0 16.805 20.207">
+                    <g id="Group_28533" data-name="Group 28533" transform="translate(0.75 0.75)">
+                      <path id="Path_31386" data-name="Path 31386"
+                        d="M15.305,7.653c0,5.952-7.653,11.054-7.653,11.054S0,13.6,0,7.653a7.653,7.653,0,0,1,15.305,0Z"
+                        fill="none" stroke="#22b1bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        fill-rule="evenodd" />
+                      <circle id="Ellipse_7138" data-name="Ellipse 7138" cx="2.551" cy="2.551" r="2.551"
+                        transform="translate(5.102 5.102)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                  الشرقية
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">المدينة</p>
+                <div class="title_data">
+                  <figure class="icon__ figure__">
+                    <img src="./assets/images/shapes/saudi.svg" alt=".." />
+                  </figure>
+                  السعودية
+                </div>
+              </div>
+              <div class="strip">
+                <p class="title">المدينة</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.805" height="20.207" viewBox="0 0 16.805 20.207">
+                    <g id="Group_28533" data-name="Group 28533" transform="translate(0.75 0.75)">
+                      <path id="Path_31386" data-name="Path 31386"
+                        d="M15.305,7.653c0,5.952-7.653,11.054-7.653,11.054S0,13.6,0,7.653a7.653,7.653,0,0,1,15.305,0Z"
+                        fill="none" stroke="#22b1bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        fill-rule="evenodd" />
+                      <circle id="Ellipse_7138" data-name="Ellipse 7138" cx="2.551" cy="2.551" r="2.551"
+                        transform="translate(5.102 5.102)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                  جدة
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">الحي</p>
+                <p class="title_data">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.805" height="20.207" viewBox="0 0 16.805 20.207">
+                    <g id="Group_28533" data-name="Group 28533" transform="translate(0.75 0.75)">
+                      <path id="Path_31386" data-name="Path 31386"
+                        d="M15.305,7.653c0,5.952-7.653,11.054-7.653,11.054S0,13.6,0,7.653a7.653,7.653,0,0,1,15.305,0Z"
+                        fill="none" stroke="#22b1bf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        fill-rule="evenodd" />
+                      <circle id="Ellipse_7138" data-name="Ellipse 7138" cx="2.551" cy="2.551" r="2.551"
+                        transform="translate(5.102 5.102)" fill="none" stroke="#22b1bf" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </svg>
+
+                  الفردوس
+                </p>
+              </div>
+              <div class="strip">
+                <p class="title">مساحة الأرض</p>
+                <p class="title_data">3500 متر</p>
+              </div>
+              <div class="strip">
+                <p class="title">مساحة المبنى</p>
+                <p class="title_data">500 متر</p>
+              </div>
+              <div class="strip">
+                <p class="title">عدد الأدوار</p>
+                <p class="title_data">10 دور</p>
+              </div>
+              <div class="strip">
+                <p class="title">عدد الغرف أو الفتحات</p>
+                <p class="title_data">60 غرفة</p>
+              </div>
+              <div class="strip">
+                <p class="title">السعر</p>
+                <p class="title_data">من 10000 الي 1000000</p>
+              </div>
+              <div class="strip">
+                <p class="title">عدد سنوات النشاط</p>
+                <p class="title_data">5 سنة</p>
+              </div>
+            </div>
+            <a class="deal_link link-om" href="#"> تفاصيل الصفقة </a>
+          </div>
+
+          <div class="deal_owner_block section__">
+            <div class="head__">
+              <h4 class="site_head__">مالك الصفقة</h4>
+            </div>
+
+            <a class="message_head__ deal_owner_link" href="#">
+              <figure class="figure__ img__ loading-omd">
+                <img class="lazy-omd img-om" data-src="assets/images/message/secondePerson.jpg"
+                  alt="deals section block" />
+              </figure>
+              <div class="head_info">
+                <h5 class="sender_name">يونس مختار</h5>
+              </div>
+            </a>
+          </div>
+
+          <div class="share_deal_block section__">
+            <h4 class="head__">شارك الصفقة</h4>
+            <div class="share_deal_content">
+              <div class="link_block">
+                <p class="deal_link">https://safka.com/go/581024</p>
+                <button class="button__ copy_link_button">
+                  <img class="copy_icon" src="assets/images/shapes/copy.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="links_group">
+                <a class="link__om twitter_like" href="#">
+                  Twitter
+                  <svg class="icon__" xmlns="http://www.w3.org/2000/svg" width="13.923" height="11.308"
+                    viewBox="0 0 13.923 11.308">
+                    <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter"
+                      d="M12.492,6.2c.009.124.009.247.009.371a8.063,8.063,0,0,1-8.119,8.119A8.064,8.064,0,0,1,0,13.408a5.9,5.9,0,0,0,.689.035,5.715,5.715,0,0,0,3.543-1.219,2.859,2.859,0,0,1-2.668-1.979,3.6,3.6,0,0,0,.539.044,3.018,3.018,0,0,0,.751-.1,2.854,2.854,0,0,1-2.288-2.8V7.356a2.874,2.874,0,0,0,1.29.362A2.858,2.858,0,0,1,.972,3.9,8.111,8.111,0,0,0,6.855,6.888a3.221,3.221,0,0,1-.071-.654,2.856,2.856,0,0,1,4.938-1.952,5.618,5.618,0,0,0,1.811-.689A2.846,2.846,0,0,1,12.28,5.165a5.72,5.72,0,0,0,1.643-.442A6.134,6.134,0,0,1,12.492,6.2Z"
+                      transform="translate(0 -3.381)" fill="#2abdf4" />
+                  </svg>
+                </a>
+
+                <a class="link__om facebook_link" href="#">
+                  Facebook
+                  <svg class="_icon" xmlns="http://www.w3.org/2000/svg" width="6.973" height="13.946"
+                    viewBox="0 0 6.973 13.946">
+                    <path id="facebook_1_" data-name="facebook(1)"
+                      d="M11.887,2.316H13.16V.1A16.439,16.439,0,0,0,11.306,0,2.944,2.944,0,0,0,8.213,3.277V5.23H6.187V7.708H8.213v6.237H10.7V7.709H12.64l.309-2.479H10.7V3.522c0-.716.193-1.207,1.192-1.207Z"
+                      transform="translate(-6.187)" fill="#4979ba" />
+                  </svg>
+                </a>
+
+                <a class="link__om linkedin_link" href="#">
+                  Linkedin
+                  <svg class="icon__" id="Group_9138" data-name="Group 9138" xmlns="http://www.w3.org/2000/svg"
+                    width="12.601" height="12.579" viewBox="0 0 12.601 12.579">
+                    <path id="Path_17984" data-name="Path 17984" d="M1.5.08A1.5,1.5,0,1,0,3,1.578,1.5,1.5,0,0,0,1.5.08Z"
+                      transform="translate(0 -0.08)" fill="#2279ef" />
+                    <rect id="Rectangle_2625" data-name="Rectangle 2625" width="2.584" height="8.315"
+                      transform="translate(0.206 4.264)" fill="#2279ef" />
+                    <path id="Path_17985" data-name="Path 17985"
+                      d="M37.879,29.383a2.716,2.716,0,0,0-2.445,1.343H35.4V29.59H32.92V37.9H35.5V33.791c0-1.084.206-2.135,1.551-2.135,1.325,0,1.343,1.24,1.343,2.2V37.9h2.583V33.344C40.979,31.105,40.5,29.383,37.879,29.383Z"
+                      transform="translate(-28.378 -25.326)" fill="#2279ef" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Divisions -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+      <div class="footer_content__">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <figure class="footer-logo__ figure-om loading-omd">
+              <img class="lazy-omd img-om" data-src="assets/images/footer-logo.png" alt=".." width="" height="" />
+            </figure>
+            <p class="footer_parg__">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+            </p>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">روابط سريعة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">القطاعات</a></li>
+                  <li>
+                    <a href="#!">الأقسام</a>
+                  </li>
+                  <li><a href="#!">نبذة عن منصة </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">المساعدة</h2>
+                <ul class="footer_list__ list-unstyled">
+                  <li><a href="#!">الشروط والأحكام</a></li>
+                  <li>
+                    <a href="#!">الأسئلة الشائعة</a>
+                  </li>
+                  <li><a href="#!">اتصل بنا</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+                <ul class="footer_list__ contact_info list-unstyled">
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/whatsapp.svg" alt=".." width="" height="" />
+                      </figure>
+                      +966 123-456-7890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/email.svg" alt=".." width="" height="" />
+                      </figure>
+                      name123@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure class="figure__">
+                        <img class="img-om" src="./assets/images/shapes/location.svg" alt=".." width="" height="" />
+                      </figure>
+                      طريق الملك فهد
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights_content___">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__">
+              جميع الحقوق محفوظة - تصميم وبرمجة 2022 &copy;
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <ul class="footer_socials__ list-unstyled">
+              <li class="li__">
+                <a href="#!" class="link__">
+                  <img class="img-om" src="./assets/images/socials/twitter.png" alt=".." width="" height="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <p class="copyrights__ end__">
+              تصميم وتطوير
+              <a href="#!">
+                <img src="./assets/images/copyrights.png" alt=".." />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- start js include  -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>
